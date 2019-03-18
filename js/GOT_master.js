@@ -1,21 +1,27 @@
 (() => {
-	// stub
 	console.log('fired!');
 
+	// variable stack
+	// grab the shields at the bottom of the page
 	const    sigils      = document.querySelectorAll('.sigil-container'),
 		     lightbox    = document.querySelector('.lightbox'),
 		     video       = document.querySelector('video');
 
-	function openLightbox() {
-		lightbox.classList.add('lightbox-on');
+	function showLightbox() {
+		lightbox.classList.add('show-lightbox');
+		video.play();
 	}
 
-	function closeLightbox(){
-		lightbox.classList.remove('lightbox-on');
+	function hideLightbox(){
+		lightbox.classList.remove('show-lightbox');
+
+		// rewind the current video and pause it
+		video.currentTime = 0;
+		video.pause();
 	}
 
-	sigils.forEach(sigil => sigil.addEventListener('click', openLightbox));
+	// sigils.forEach(sigil => sigil.addEventListener('click', openLightbox));
 
-	video.addEventListener('ended', closeLightbox);
+	// video.addEventListener('ended', closeLightbox);
 
 })();
