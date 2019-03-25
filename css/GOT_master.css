@@ -114,6 +114,7 @@ main {
 	display:block;
 }
 
+
 .lightbox-close{
 	position: absolute;
 	color: white;
@@ -128,4 +129,20 @@ video {
 	width: 80%;
 	margin-top: 10%;
 	border: thin solid #949393;
+}
+
+
+.house-info{
+	color: white;
+	margin:20px auto;
+	width: 60%;
+	text-align: center;
+	line-height: 2;
+	font-size: 19px;
+
+}
+
+.house-name{
+	font-size: 2em;
+	letter-spacing: 2;
 }
