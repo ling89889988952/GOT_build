@@ -33,7 +33,7 @@ main {
 	height:360px;
 	background-color:grey;
 	margin:0 auto;
-	/* overflow:hidden; */
+	 overflow:hidden; 
 }
 
 #houseImages { 
