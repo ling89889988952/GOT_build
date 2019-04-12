@@ -158,16 +158,33 @@
 		TweenMax.to(topBanners, 0.7, {right:currentOffset });
 
 		// change the text content on the page per house
-		tagline.textContent = `House ${houseData[0][0]}`;
-		houseInfo.textContent = `House ${houseData[0][1]}`;
+		// let index 
+		// tagline.textContent = `House ${houseData[0][0]}`;
+		// houseInfo.textContent = `House ${houseData[0][1]}`;
+
+	}
 
 
+
+	function runAnimation() {
+		TweenMax.to(sigils, 0.6, {	
+		scaleX: 1.2,
+		scaleY:1.2
+		});
+	}
+
+	function resetAnimation(){
+
+		TweenMax.to(sigils, 0.6, {
+		scaleX: 1,
+		scaleY:1
+		});
 	}
 
 	// function {
 	sigils .forEach(sigil => sigil.addEventListener('click', animationBanners));
-
-	// sigils.forEach(sigil => sigil.addEventListener('click', openLightbox));
+	sigils .forEach(sigil => sigil.addEventListener('mouseover', runAnimation));
+	sigils .forEach(sigil => sigil.addEventListener('mouseout', resetAnimation));
 	sigils .forEach(sigil => sigil.addEventListener('click', openLightbox));
 	video.addEventListener('ended', closeLightbox);
 	lbClose.addEventListener('click', closeLightbox);
