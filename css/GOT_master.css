@@ -28,17 +28,26 @@ main {
 	top:30px;
 }
 
+button{
+	width: 100px;
+	height: 30px;
+	font-size: 10px;
+	background-color: white;
+	color: black;
+	margin-top: 20px;
+}
+
 #imageContainer {
 	width:600px;
 	height:360px;
 	background-color:grey;
 	margin:0 auto;
-	 overflow:hidden; 
+	overflow:hidden; 
 }
 
 #houseImages { 
 	position:relative; 
-	width:4000px;
+	width:6300px;
 	/* transition: all .5s;*/ }
 #houseImages img { float:left; }
 
@@ -59,30 +68,40 @@ main {
 	height:54px;
 	display:inline-block;
 	overflow:hidden;
-	background-image:url(../images/GOT_sprites.png);
+	background-image:url(../images/new-game-off.png);
 	background-repeat:no-repeat;
 	transition:transform .3s;
 	-webkit-transition:-webkit-transform .3s;
 	-moz-transition:-moz-transform .3s;
 }
 
-.stark { background-position:0px -54px; }
-.stark:hover { background-position:0px 0px; }
+.baratheon { background-position:0px -54px; }
+.baratheon:hover { background-position:0px 0px; }
 
-.baratheon { background-position:-50.5px -54px; }
-.baratheon:hover { background-position:-51px 0px; }
+.stark { background-position:-50.5px -54px; }
+.stark:hover { background-position:-50.5px 0px; }
 
-.lannister { background-position:-101px -54px; }
-.lannister:hover { background-position:-101px 0px; }
+.lannister { background-position:-102.5px -54px; }
+.lannister:hover { background-position:-102.5px 0px; }
 
-.tully { background-position:-152px -54px; }
-.tully:hover { background-position:-152px 0px; }
+.tully { background-position:-152.5px -54px; }
+.tully:hover { background-position:-152.5px 0px; }
 
-.greyjoy { background-position:-202px -54px; }
-.greyjoy:hover { background-position:-202px 0px; }
+.arryn { background-position:-203.8px -54px; }
+.arryn:hover { background-position:-203.8px 0px; }
 
-.arryn { background-position:-253px -54px; }
-.arryn:hover { background-position:-253px 0px; }
+.targaryen { background-position:-253.8px -54px; }
+.targaryen:hover { background-position:-253.8px 0px; }
+
+.frey { background-position:-305px -54px; }
+.frey:hover { background-position:-305px 0px; }
+
+.tyrell{ background-position:-356px -54px; }
+.tyrell:hover { background-position:-356px 0px; }
+
+.greyjoy{ background-position:-407.5px -54px; }
+.greyjoy:hover { background-position:-407.5px 0px; }
+
 /* ----- end image sprite ----- */
 
 /* ----- classes for transitions ----- */
@@ -110,17 +129,35 @@ main {
 	display: none;
 }
 
+
 .lightbox-on{
 	display:block;
 }
 
 
 .lightbox-close{
-	position: absolute;
-	color: white;
-	font-size: 2rem;
-	right: 12px;
-	top: 12px;
+	/*position: absolute;*/
+	margin-right: 20px;
+	cursor:pointer;
+}
+
+.lightbox-pause{
+	/*position: absolute;*/
+	margin-right: 140px;
+	cursor:pointer;
+
+}
+
+.lightbox-play{
+	/*position: absolute;*/
+	margin-right: 20px;
+	cursor:pointer;
+
+}
+
+
+.unmute{
+	margin-right: 20px;
 	cursor:pointer;
 }
 

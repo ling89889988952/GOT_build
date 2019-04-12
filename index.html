@@ -13,24 +13,34 @@
 
     <section id="imageContainer">
     	<div id="houseImages" style = "right 0"> <!-- add in all of the images to make a scrolling "banner" -->
+            <img src="images/baratheon.jpg"/>
     		<img src="images/stark.jpg"/>
-    		<img src="images/baratheon.jpg"/>
     		<img src="images/lannister.jpg"/>
-    		<img src="images/tully.jpg"/>
-    		<img src="images/greyjoy.jpg"/>
-    		<img src="images/arryn.jpg"/>
+            <img src="images/tully.jpg"/>
+            <img src="images/arryn.jpg"/>
+            <img src="images/targaryen.jpg"/>
+            <img src="images/frey.jpg"/>
+            <img src="images/tyrell.jpg"/>
+            <img src="images/greyjoy.jpg"/>
         </div>
     </section>
 
     <nav id="bottomNav">
     	<ul id="navList">
         	<!-- custom data attribute, allowing to pass custom data https://developer.mozilla.org/en/docs/Web/API/HTMLElement/dataset -->
-            <li><div class="sigil-container stark" data-offset="0"></div></li>
-            <li><div class="sigil-container baratheon" data-offset="1"></div></li>
+            <li><div class="sigil-container baratheon" data-offset="0"></div></li>
+            <li><div class="sigil-container stark" data-offset="1"></div></li>
             <li><div class="sigil-container lannister" data-offset="2"></div></li>
-            <li><div class="sigil-container tully" data-offset="3"></div></li>
-            <li><div class="sigil-container greyjoy" data-offset="4"></div></li>
-            <li><div class="sigil-container arryn" data-offset="5"></div></li>
+            <li><div class="sigil-container tully" data-offset="3"></div></li> 
+            <li><div class="sigil-container arryn" data-offset="4"></div></li>
+             <li><div class="sigil-container targaryen" data-offset="5"></div></li>
+             <li><div class="sigil-container frey" data-offset="6"></div></li>
+             <li><div class="sigil-container tyrell" data-offset="7"></div></li>
+             <li><div class="sigil-container greyjoy" data-offset="8"></div></li>
+           
+
+
+
         </ul>
     </nav>
 
@@ -47,7 +57,11 @@
 <!-- lightbox for highlighted content -->
 <section class="lightbox">
     <!-- this will by dynamic shortly -->
-    <span class="lightbox-close">X</span>
+    <button class="lightbox-close">Close</button>
+    <button class="lightbox-play">Play</button>
+    <button class="lightbox-pause">Pause</button>
+    <button class="mute">Unmute</button>
+    <input class="volume" type="range" min="0" max="100" value="100" step="1">
     <video src="video/House-Stark.mp4" muted autoplay controls></video>
 </section>
 
