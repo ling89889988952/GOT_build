@@ -78,29 +78,29 @@ button{
 .baratheon { background-position:0px -54px; }
 .baratheon:hover { background-position:0px 0px; }
 
-.stark { background-position:-50.5px -54px; }
-.stark:hover { background-position:-50.5px 0px; }
+.stark { background-position:-51px -54px; }
+.stark:hover { background-position:-51px 0px; }
 
-.lannister { background-position:-102.5px -54px; }
-.lannister:hover { background-position:-102.5px 0px; }
+.lannister { background-position:-102px -54px; }
+.lannister:hover { background-position:-102px 0px; }
 
-.tully { background-position:-152.5px -54px; }
-.tully:hover { background-position:-152.5px 0px; }
+.tully { background-position:-153px -54px; }
+.tully:hover { background-position:-153px 0px; }
 
-.arryn { background-position:-203.8px -54px; }
-.arryn:hover { background-position:-203.8px 0px; }
+.arryn { background-position:-204px -54px; }
+.arryn:hover { background-position:-204px 0px; }
 
-.targaryen { background-position:-253.8px -54px; }
-.targaryen:hover { background-position:-253.8px 0px; }
+.targaryen { background-position:-255px -54px; }
+.targaryen:hover { background-position:-255px 0px; }
 
-.frey { background-position:-305px -54px; }
-.frey:hover { background-position:-305px 0px; }
+.frey { background-position:-306px -54px; }
+.frey:hover { background-position:-306px 0px; }
 
-.tyrell{ background-position:-356px -54px; }
-.tyrell:hover { background-position:-356px 0px; }
+.tyrell{ background-position:-357.5px -54px; }
+.tyrell:hover { background-position:-357.5px 0px; }
 
-.greyjoy{ background-position:-407.5px -54px; }
-.greyjoy:hover { background-position:-407.5px 0px; }
+.greyjoy{ background-position:-408.5px -54px; }
+.greyjoy:hover { background-position:-408.5px 0px; }
 
 /* ----- end image sprite ----- */
 
@@ -156,7 +156,7 @@ button{
 }
 
 
-.unmute{
+.mute{
 	margin-right: 20px;
 	cursor:pointer;
 }
